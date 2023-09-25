@@ -554,7 +554,6 @@ use MatanYadaev\EloquentSpatial\Objects\Point;
  *
  * @method string uuid()
  *
- * @method Point randomPoint(int $srid=4326)
  */
 class Generator
 {
@@ -916,6 +915,11 @@ class Generator
             $nbDigits !== null ? (int) $nbDigits : null,
             (bool) $strict,
         );
+    }
+
+    public function randomPoint(int $srid = 4326): Point
+    {
+        return $this->ext(Extension\MatanYadaevSpatialExtension::class)->randomPoint($srid);
     }
 
     /**
