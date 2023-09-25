@@ -36,6 +36,11 @@ final class Helper
         return mt_getrandmax();
     }
 
+    public static function randomfloatBetween(float $min, float $max): float
+    {
+        return $min + lcg_value() * abs($max - $min);
+    }
+
     /**
      * Replaces all hash sign ('#') occurrences with a random number
      * Replaces all percentage sign ('%') occurrences with a non-zero number.

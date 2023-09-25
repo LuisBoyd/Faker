@@ -3,6 +3,7 @@
 namespace Faker;
 
 use Faker\Container\ContainerInterface;
+use MatanYadaev\EloquentSpatial\Objects\Point;
 
 /**
  * @property string $citySuffix
@@ -552,6 +553,8 @@ use Faker\Container\ContainerInterface;
  * @property string $uuid
  *
  * @method string uuid()
+ *
+ * @method Point randomPoint(int $srid=4326)
  */
 class Generator
 {

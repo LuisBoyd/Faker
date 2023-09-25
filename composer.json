@@ -15,6 +15,7 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
+        "matanyadaev/laravel-eloquent-spatial": "^3.2",
         "psr/container": "^1.0 || ^2.0",
         "symfony/deprecation-contracts": "^2.2 || ^3.0"
     },
