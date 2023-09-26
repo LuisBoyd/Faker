@@ -54,6 +54,7 @@ final class ContainerBuilder
             Extension\DateTimeExtension::class => Core\DateTime::class,
             Extension\FileExtension::class => Core\File::class,
             Extension\NumberExtension::class => Core\Number::class,
+            Extension\MatanYadaevSpatialExtension::class => Core\Spatial::class,
             Extension\VersionExtension::class => static function (ContainerInterface $container): Extension\VersionExtension {
                 return new Core\Version($container->get(Extension\NumberExtension::class));
             },
